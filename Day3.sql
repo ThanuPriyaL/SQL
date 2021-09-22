@@ -12,8 +12,8 @@ salesid int,
 constraint FK_ORDER foreign key (salesid) references sales(salesid) );
 
 insert into sales values(1,'maya','bengaluru');
- insert into sales values(2,'thanu','bang');
- insert into sales values(3,'priya','bang');
+ insert into sales values(2,'thanu','bengaluru');
+ insert into sales values(3,'priya','bengaluru');
 
 insert into order_sales values(1,'mobile','bengaluru','1');
  insert into order_sales values(2,'clothings','bengaluru','2');
@@ -22,7 +22,7 @@ insert into order_sales values(1,'mobile','bengaluru','1');
 select * from sales;
 select * from order_sales;
 
-delete from sales where salesid=1; /* cannot delete as it is connect to foriegn key */
+delete from sales where salesid=1; /* cannot delete as it is connected to foriegn key */
 
 select distinct  salesname, id, productname from sales s , order_sales o where s.salesid= o.salesid and s.salesname= 'maya';
 select * from sales s , order_sales o where s.salesid= o.salesid and s.salesname= 'maya';
