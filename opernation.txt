@@ -1,0 +1,60 @@
+package com.company;
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        float ip1,ip2,ip3,ip4,sum,sub,mul,div;
+        int num;
+        System.out.println("Enter your choice number between 1 to 4");
+        Scanner ip=new Scanner(System.in);
+        num=ip.nextInt();
+            switch (num) {
+                case 1:
+                    System.out.println("Enter two input number");
+                    ip1 = ip.nextInt();
+                    ip2 = ip.nextInt();
+                    sum = ip1 + ip2;
+                    System.out.println("The sum is" + sum);
+                    sub = ip1 - ip2;
+                    System.out.println("The sub is" + sub);
+                    mul = ip1 * ip2;
+                    System.out.println("The product is" + mul);
+                    div = (float) ip1 / ip2;
+                    System.out.println("The quoitent is" + div);
+                    break;
+                case 2:
+                    System.out.println("Enter three input number");
+                    ip1 = ip.nextInt();
+                    ip2 = ip.nextInt();
+                    ip3 = ip.nextInt();
+                    sum = (ip1 + ip2) + ip3;
+                    System.out.println("The sum is" + sum);
+                    sub = (ip1 - ip2) - ip3;
+                    System.out.println("The sub is" + sub);
+                    mul = (ip1 * ip2) * ip3;
+                    System.out.println("The product is" + mul);
+                    div = (float) ip1 / ip2;
+                    System.out.println("The quoitent is" + div);
+                    break;
+                case 3:
+                    System.out.println("Enter four input number");
+                    ip1 = ip.nextInt();
+                    ip2 = ip.nextInt();
+                    ip3 = ip.nextInt();
+                    ip4 = ip.nextInt();
+                    sum = (ip1 + ip2) + (ip3 + ip4);
+                    System.out.println("The sum is" + sum);
+                    sub = (ip1 - ip2) - (ip3 - ip4);
+                    System.out.println("The sub is" + sub);
+                    mul = (ip1 * ip2) * (ip3 * ip4);
+                    System.out.println("The product is" + mul);
+                    div = (float) ip1 / ip2;
+                    System.out.println("The quoitent is" + div);
+                    break;
+                default:
+                    System.out.println("choose a valid option");
+
+            }
+        }
+    }
